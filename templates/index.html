@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Digit Recognizer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet" />
+</head>
+<body>
+  <div class="container">
+    <h1>Handwritten Digit Recognizer</h1>
+    <p class="sub">Draw a digit (0–9) below and pick a model.</p>
+
+    <div class="board">
+      <canvas id="canvas" width="280" height="280"></canvas>
+      <div class="controls">
+        <div class="row">
+          <button id="clearBtn">Clear</button>
+          <select id="modelSelect">
+            <option value="cnn" selected>CNN (high accuracy)</option>
+            <option value="rf">Random Forest</option>
+          </select>
+        </div>
+        <button id="predictBtn" class="primary">Predict</button>
+      </div>
+    </div>
+
+    <div id="result" class="result hidden">
+      <h2>Prediction: <span id="predDigit">—</span></h2>
+      <pre id="probs"></pre>
+    </div>
+
+    <footer>
+      <small>Tip: draw with thick strokes. We auto-invert & resize to 28×28.</small>
+    </footer>
+  </div>
+
+  <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>

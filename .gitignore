@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+.venv311/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+
+# Large files (models, data)
+*.h5
+*.pkl
+*.pt
+*.onnx
+*.csv
+*.npz
+.venv/
+*.dylib
+*.so
+*.pkl
+__pycache__/

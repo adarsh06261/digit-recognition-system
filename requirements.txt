@@ -1,7 +1,6 @@
-flask
-numpy
-pillow
-scikit-learn
-tensorflow
-from streamlit_drawable_canvas import st_canvas
-
+streamlit>=1.29
+numpy>=1.26
+pillow>=10
+scikit-learn>=1.4
+tensorflow==2.20.0
+streamlit-drawable-canvas>=0.9

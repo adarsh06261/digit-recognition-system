@@ -3,3 +3,5 @@ numpy
 pillow
 scikit-learn
 tensorflow
+from streamlit_drawable_canvas import st_canvas
+
